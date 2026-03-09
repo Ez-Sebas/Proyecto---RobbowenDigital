@@ -1,0 +1,273 @@
+.container-header > a > img {
+    padding: 17px  10px;
+    height: 100px;
+    width: 140px;
+}
+
+.hire-me > a > img {
+    padding: 17px  10px;
+    padding-right: 0;
+    height: 50px;
+    position: relative;
+    top: -5px;
+    width: 55px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.information {
+    margin-right: 100px;
+}
+
+.information > h1 {
+    color: var(--text);
+    font-family: Bitter, serif;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 80px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.information > h1:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    height: 3px;
+    background: var(--subtext);
+    width: 80px;
+    transform-origin: left center;
+}
+
+.information > p {
+    color: var(--text);
+    font-family: Bitter, serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39.6px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: -263px;
+    left: 223px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #919795;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.scroll > span {
+    animation: reveal 1s ease-out 1.5s backwards;
+}
+
+.scroll > span {
+    animation-play-state: paused;
+}
+
+.scroll > span span {
+    margin: 0 1px;
+    display: inline-block;
+    animation: scrollBob 8s ease-in-out infinite;
+}
+
+.scroll > span span {
+    animation-play-state: running;
+}
+
+.scroll > span span:first-child {
+    animation-delay: 3.0725s;
+}
+
+.scroll > span span:nth-child(2) {
+    animation-delay: 3.145s;
+}
+
+.scroll > span span:nth-child(3) {
+    animation-delay: 3.2175s;
+}
+
+.scroll > span span:nth-child(4) {
+    animation-delay: 3.29s;
+}
+
+.scroll > span span:nth-child(5) {
+    animation-delay: 3.3625s;
+}
+
+.scroll > span span:nth-child(6) {
+    animation-delay: 3.435s;
+}
+
+.scroll > span span:nth-child(7) {
+    animation-delay: 3.5075s;
+}
+
+.scroll > span span:nth-child(8) {
+    animation-delay: 3.58s;
+}
+
+.scroll > span span:nth-child(9) {
+    animation-delay: 3.6525s;
+}
+
+@keyframes scrollBob {
+    0%,10% {
+        transform: none;
+        opacity: 1;
+        color: #919795;
+    }
+
+    1%,8% {
+        transform: translateY(-2px);
+        color: var(--fill,var(--bg));
+    }
+
+    4% {
+        transform: translateY(3px);
+        opacity: 1;
+        color: #919795;
+    }
+}
+
+.scroll::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 190px;
+    background: #919795;
+    margin: 12px auto 0;
+}
+
+.about-me {
+    margin-top: 340px;
+    padding-bottom: 20px;
+}
+
+.about-me > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me > div > div {
+    margin-right: 40px;
+}
+
+.about-me > div > img {
+    position: relative;
+    height: 400px;
+    right: -50px;
+    margin-right: 60px;
+    top: 85px;
+    width: 520px;
+}
+
+.serial-language {
+    margin-top: 290px;
+    padding-bottom: 20px;
+}
+
+.serial-language > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.serial-language > div > div {
+    margin-right: 40px;
+}
+
+.serial-language > div > img {
+    position: relative;
+    height: 400px;
+    left: -5px;
+    margin-right: 60px;
+    top: 10px;
+    width: 550px;
+}
+
+.photography {
+    margin-top: 290px;
+    padding-bottom: 20px;
+}
+
+.photography > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 560px;
+}
+
+.photos-grid {
+    margin: 100px 0 50px;
+}
+
+.photos-grid > div {
+    column-gap: 50px;
+    display: grid;
+    grid-template-columns: 530px 530px;
+}
+
+.photos-grid > div > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.photos-grid > div > div > img {
+    width: 530;
+}
+
+.milda {
+    height: 423px;
+}
+
+.lakebled {
+    height: 284px;
+}
+
+.asakusa {
+    height: 718px;
+}
+
+.gifu {
+    height: 304px;
+}
+
+.lisbon {
+    height: 525px;
+}
+
+.poster {
+    margin-top: 125px;
+    height: 721px;
+}
+
+.walessunset {
+    height: 290px;
+}
+
+.ljubljana {
+    height: 719px;
+}
+
+.btns {
+    width: 1110px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 40px auto;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: 700;
+    text-align: center;
+}

@@ -1,0 +1,236 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+html:after,html:before {
+    content: "";
+    will-change: top left;
+    backface-visibility: hidden;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    z-index: 3;
+}
+
+html:before {
+    left: 0;
+}
+
+html:after {
+    right: 0;
+}
+
+body {
+    background: var(--bg);
+    min-height: calc(100vh - 40px);
+    position: relative;
+    padding: 20px;
+}
+
+body::after,body::before {
+    content: "";
+    will-change: top left;
+    backface-visibility: hidden;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    z-index: 2;
+}
+
+body:before {
+    top: 0;
+}
+
+body:after {
+    bottom: 0;
+}
+
+body.lock-scroll,html.lock-scroll {
+    overflow: hidden;
+}
+
+.header-content {
+    position: fixed;
+    z-index: 3;
+}
+
+.container-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container-header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    letter-spacing: 4px;
+    list-style: none;
+}
+
+.container-header > nav > ul > li > a {
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .12s cubic-bezier(.25,.46,.45,.94);
+}
+.container-header > nav > ul > li > a:hover {
+    letter-spacing: 6px;
+    color: var(--text);
+}
+
+
+.hire-me > a {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 4px;
+    margin-left: 350px;
+    text-decoration: none;
+}
+
+.hire-me > a > span {
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 27px;
+    transition: all .12s cubic-bezier(.25,.46,.45,.94);
+}
+.hire-me > a > span:hover {
+    letter-spacing: 6px;
+    color: var(--text);
+}
+
+main {
+    margin: 40px 50px;
+}
+
+.dot {
+    color: var(--subtext);
+}
+
+.subtitle {
+    color: var(--text);
+    font-family: Bitter, serif;
+    font-size: 38px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.text-description {
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    line-height: 29.7px;
+}
+
+.btns {
+    display: flex;
+    justify-content: start;
+    margin-left: 270px;
+    margin-right: 270px;
+}
+
+.btn {
+    margin: 30px 0;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn,.btn-label {
+    display: inline-block;
+    position: relative;
+}
+
+.btn-label {
+    padding: 15px 45px;
+    color: var(--line);
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.btn-fill {
+    transition: transform 1.5s ease-out,background .15s ease-out;
+    display: inline-block;
+    position: absolute;
+    padding: 16px 0;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    color: var(--bg);
+    text-align: center;
+    z-index: 1;
+    border-radius: 8px;
+    opacity: .75;
+}
+.btn:hover .btn-fill {
+    background-color: var(--fill,var(--bg));
+}
+
+.jam {
+    border-bottom: 2px solid var(--fill,var(--subtext));
+    color: var(--text);
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+footer {
+    align-items: center;
+    color: #919795;
+    display: flex;
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 160px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links > a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; /* esconde el texto fuera de pantalla */
+    overflow: hidden;
+}
+
+.ig {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDIuMTYzYzMuMjA0IDAgMy41ODQuMDEyIDQuODUuMDcgMy4yNTIuMTQ4IDQuNzcxIDEuNjkxIDQuOTE5IDQuOTE5LjA1OCAxLjI2NS4wNjkgMS42NDUuMDY5IDQuODQ5IDAgMy4yMDUtLjAxMiAzLjU4NC0uMDY5IDQuODQ5LS4xNDkgMy4yMjUtMS42NjQgNC43NzEtNC45MTkgNC45MTktMS4yNjYuMDU4LTEuNjQ0LjA3LTQuODUuMDctMy4yMDQgMC0zLjU4NC0uMDEyLTQuODQ5LS4wNy0zLjI2LS4xNDktNC43NzEtMS42OTktNC45MTktNC45Mi0uMDU4LTEuMjY1LS4wNy0xLjY0NC0uMDctNC44NDkgMC0zLjIwNC4wMTMtMy41ODMuMDctNC44NDkuMTQ5LTMuMjI3IDEuNjY0LTQuNzcxIDQuOTE5LTQuOTE5IDEuMjY2LS4wNTcgMS42NDUtLjA2OSA0Ljg0OS0uMDY5ek0xMiAwQzguNzQxIDAgOC4zMzMuMDE0IDcuMDUzLjA3MiAyLjY5NS4yNzIuMjczIDIuNjkuMDczIDcuMDUyLjAxNCA4LjMzMyAwIDguNzQxIDAgMTJjMCAzLjI1OS4wMTQgMy42NjguMDcyIDQuOTQ4LjIgNC4zNTggMi42MTggNi43OCA2Ljk4IDYuOThDOC4zMzMgMjMuOTg2IDguNzQxIDI0IDEyIDI0YzMuMjU5IDAgMy42NjgtLjAxNCA0Ljk0OC0uMDcyIDQuMzU0LS4yIDYuNzgyLTIuNjE4IDYuOTc5LTYuOTguMDU5LTEuMjguMDczLTEuNjg5LjA3My00Ljk0OCAwLTMuMjU5LS4wMTQtMy42NjctLjA3Mi00Ljk0Ny0uMTk2LTQuMzU0LTIuNjE3LTYuNzgtNi45NzktNi45OEMxNS42NjguMDE0IDE1LjI1OSAwIDEyIDB6bTAgNS44MzhhNi4xNjIgNi4xNjIgMCAxMDAgMTIuMzI0IDYuMTYyIDYuMTYyIDAgMDAwLTEyLjMyNHpNMTIgMTZhNCA0IDAgMTEwLTggNCA0IDAgMDEwIDh6bTYuNDA2LTExLjg0NWExLjQ0IDEuNDQgMCAxMDAgMi44ODEgMS40NCAxLjQ0IDAgMDAwLTIuODgxeiIvPjwvc3ZnPg==)
+}
+
+.git {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDBDNS4zNzQgMCAwIDUuMzczIDAgMTJjMCA1LjMwMiAzLjQzOCA5LjggOC4yMDcgMTEuMzg3LjU5OS4xMTEuNzkzLS4yNjEuNzkzLS41Nzd2LTIuMjM0Yy0zLjMzOC43MjYtNC4wMzMtMS40MTYtNC4wMzMtMS40MTYtLjU0Ni0xLjM4Ny0xLjMzMy0xLjc1Ni0xLjMzMy0xLjc1Ni0xLjA4OS0uNzQ1LjA4My0uNzI5LjA4My0uNzI5IDEuMjA1LjA4NCAxLjgzOSAxLjIzNyAxLjgzOSAxLjIzNyAxLjA3IDEuODM0IDIuODA3IDEuMzA0IDMuNDkyLjk5Ny4xMDctLjc3NS40MTgtMS4zMDUuNzYyLTEuNjA0LTIuNjY1LS4zMDUtNS40NjctMS4zMzQtNS40NjctNS45MzEgMC0xLjMxMS40NjktMi4zODEgMS4yMzYtMy4yMjEtLjEyNC0uMzAzLS41MzUtMS41MjQuMTE3LTMuMTc2IDAgMCAxLjAwOC0uMzIyIDMuMzAxIDEuMjNBMTEuNTA5IDExLjUwOSAwIDAxMTIgNS44MDNjMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2QzIwLjU2NiAyMS43OTcgMjQgMTcuMyAyNCAxMmMwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg==)
+}
+
+.email {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDEyLjcxM0wuMDE1IDNoMjMuOTcxTDEyIDEyLjcxM3ptLTUuNDI1LTEuODIyTDAgNS41NjJ2MTIuNTAxbDYuNTc1LTcuMTcyem0xMC44NSAwTDI0IDE4LjA2M1Y1LjU2MmwtNi41NzUgNS4zMjl6bS0xLjU1NyAxLjI2MUwxMiAxNS4yODdsLTMuODY4LTMuMTM1TC4wMjIgMjFoMjMuOTU2bC04LjExLTguODQ4eiIvPjwvc3ZnPg==)
+}
