@@ -22,18 +22,12 @@
 </head>
 <body>
     <header class="header-content">
+        <input type="checkbox" id="menu-toggle" hidden>
         <div class="container-header">
             <a href="index.html">
                 <img src="assets/img/looking-elsewhere/logo.png" alt="Sebastián Logo">
             </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="work.html">WORK</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="writing.html">WRITING</a></li>
-                </ul>
-            </nav>
+            <label for="menu-toggle" class="menu-btn">MENU</label>
             <div class="hire-me">
                 <a href="mailto:zuletas092@gmail.com">
                     <img src="assets/img/looking-elsewhere/hireMe.png" alt="Hire Me">
@@ -41,6 +35,43 @@
                 </a>
             </div>
         </div>
+        <nav class="nav-overlay">
+            <div class="container-header">
+                <a href="index.html">
+                    <img src="assets/img/looking-elsewhere/logo.png" alt="Sebastián Logo">
+                </a>
+                <label for="menu-toggle" class="close-btn">CLOSE</label>
+                <div class="hire-me">
+                    <a href="mailto:zuletas092@gmail.com">
+                        <img src="assets/img/looking-elsewhere/hireMe.png" alt="Hire Me">
+                        <span>HIRE ME</span>
+                    </a>
+                </div>
+            </div>
+            <div class="social-links">
+                <a class="ig" href="https://www.instagram.com/zuleta.239">Follow me on Instagram</a>
+                <a class="git" href="https://github.com/Ez-Sebas">Visit my GitHub</a>
+                <a class="email" href="mailto:zuletas092@gmail.com">Correo Electronico</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <span>Back to the home page.</span>
+                </li>
+                <li>
+                    <a href="work.html">Work</a>
+                    <span>My approach to development.</span>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <span>A little about me and my background.</span>
+                </li>
+                <li>
+                    <a href="writing.html">Writing</a>
+                    <span>My latest writing on tech and language.</span>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article class="article-ppal">
@@ -262,11 +293,6 @@
     </main>
     <footer>
         © MMXXVI. Gwneud yn Ne Cymru.
-        <div class="social-links">
-            <a class="ig" href="https://www.instagram.com/zuleta.239">Follow me on Instagram</a>
-            <a class="git" href="https://github.com/Ez-Sebas">Visit my GitHub</a>
-            <a class="email" href="mailto:zuletas092@gmail.com">Correo Electronico</a>
-        </div>
     </footer>
 </body>
 </html>

@@ -64,38 +64,7 @@ body.lock-scroll,html.lock-scroll {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
-}
-
-.container-header > nav > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    letter-spacing: 4px;
-    list-style: none;
-}
-
-.container-header > nav > ul > li > a {
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all .12s cubic-bezier(.25,.46,.45,.94);
-}
-.container-header > nav > ul > li > a:hover {
-    letter-spacing: 6px;
-    color: var(--text);
-}
-
-
-.hire-me > a {
-    display: flex;
-    flex-direction: row;
-    letter-spacing: 4px;
-    margin-left: 350px;
-    text-decoration: none;
+    gap: 20px;
 }
 
 .hire-me > a > span {
@@ -109,6 +78,118 @@ body.lock-scroll,html.lock-scroll {
 .hire-me > a > span:hover {
     letter-spacing: 6px;
     color: var(--text);
+}
+
+.hire-me > a {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 4px;
+    margin-left: 750px;
+    text-decoration: none;
+}
+
+.nav-overlay {
+    align-items: start;
+    display: flex;
+    background: var(--fill);
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    justify-content: flex-start;
+    left: 20px;
+    position: fixed;
+    transition: top 0.4s ease;
+    top: -100%;
+    width: calc(100vw - 40px);
+    z-index: 5;
+}
+
+#menu-toggle:checked ~ .nav-overlay {
+    top: 20px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-btn {
+    color: var(--text);
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+.menu-btn:hover {
+    letter-spacing: 6px;
+}
+
+.close-btn {
+    color: var(--text);
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+.close-btn:hover {
+    letter-spacing: 6px;
+}
+
+
+.social-links::before{
+    display: block;
+    content: "";
+    background-color: var(--line);
+    height: 3px;
+    width: 90px;
+}
+
+.social-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 40px;
+}
+
+.social-links > a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99px; /* esconde el texto fuera de pantalla */
+    overflow: hidden;
+}
+
+.nav-overlay > ul {
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 35px;
+}
+
+.nav-overlay > ul > li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: Bitter, serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.nav-overlay > ul > li > a {
+    color: var(--text);
+    text-decoration: none;
+}
+.nav-overlay > ul > li > a:hover {
+    color: var(--bg);
+}
+
+.nav-overlay > ul > li > span {
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
 }
 
 main {
@@ -205,24 +286,6 @@ footer {
     margin-top: 160px;
 }
 
-.social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-}
-
-.social-links > a {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-indent: -9999px; /* esconde el texto fuera de pantalla */
-    overflow: hidden;
-}
-
 .ig {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDIuMTYzYzMuMjA0IDAgMy41ODQuMDEyIDQuODUuMDcgMy4yNTIuMTQ4IDQuNzcxIDEuNjkxIDQuOTE5IDQuOTE5LjA1OCAxLjI2NS4wNjkgMS42NDUuMDY5IDQuODQ5IDAgMy4yMDUtLjAxMiAzLjU4NC0uMDY5IDQuODQ5LS4xNDkgMy4yMjUtMS42NjQgNC43NzEtNC45MTkgNC45MTktMS4yNjYuMDU4LTEuNjQ0LjA3LTQuODUuMDctMy4yMDQgMC0zLjU4NC0uMDEyLTQuODQ5LS4wNy0zLjI2LS4xNDktNC43NzEtMS42OTktNC45MTktNC45Mi0uMDU4LTEuMjY1LS4wNy0xLjY0NC0uMDctNC44NDkgMC0zLjIwNC4wMTMtMy41ODMuMDctNC44NDkuMTQ5LTMuMjI3IDEuNjY0LTQuNzcxIDQuOTE5LTQuOTE5IDEuMjY2LS4wNTcgMS42NDUtLjA2OSA0Ljg0OS0uMDY5ek0xMiAwQzguNzQxIDAgOC4zMzMuMDE0IDcuMDUzLjA3MiAyLjY5NS4yNzIuMjczIDIuNjkuMDczIDcuMDUyLjAxNCA4LjMzMyAwIDguNzQxIDAgMTJjMCAzLjI1OS4wMTQgMy42NjguMDcyIDQuOTQ4LjIgNC4zNTggMi42MTggNi43OCA2Ljk4IDYuOThDOC4zMzMgMjMuOTg2IDguNzQxIDI0IDEyIDI0YzMuMjU5IDAgMy42NjgtLjAxNCA0Ljk0OC0uMDcyIDQuMzU0LS4yIDYuNzgyLTIuNjE4IDYuOTc5LTYuOTguMDU5LTEuMjguMDczLTEuNjg5LjA3My00Ljk0OCAwLTMuMjU5LS4wMTQtMy42NjctLjA3Mi00Ljk0Ny0uMTk2LTQuMzU0LTIuNjE3LTYuNzgtNi45NzktNi45OEMxNS42NjguMDE0IDE1LjI1OSAwIDEyIDB6bTAgNS44MzhhNi4xNjIgNi4xNjIgMCAxMDAgMTIuMzI0IDYuMTYyIDYuMTYyIDAgMDAwLTEyLjMyNHpNMTIgMTZhNCA0IDAgMTEwLTggNCA0IDAgMDEwIDh6bTYuNDA2LTExLjg0NWExLjQ0IDEuNDQgMCAxMDAgMi44ODEgMS40NCAxLjQ0IDAgMDAwLTIuODgxeiIvPjwvc3ZnPg==)
 }
@@ -235,23 +298,19 @@ footer {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDEyLjcxM0wuMDE1IDNoMjMuOTcxTDEyIDEyLjcxM3ptLTUuNDI1LTEuODIyTDAgNS41NjJ2MTIuNTAxbDYuNTc1LTcuMTcyem0xMC44NSAwTDI0IDE4LjA2M1Y1LjU2MmwtNi41NzUgNS4zMjl6bS0xLjU1NyAxLjI2MUwxMiAxNS4yODdsLTMuODY4LTMuMTM1TC4wMjIgMjFoMjMuOTU2bC04LjExLTguODQ4eiIvPjwvc3ZnPg==)
 }
 
-.me {
+.me > div {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
 }
 
-.me > div {
-    display: flex;
-    flex-direction: row;
-}
-
 .me > div > img {
     border-radius: 100%;
-    height: 200px;
+    height: 300px;
     margin-right: 40px;
     width: 300px;
 }
+
 .me > div > div{
     display: flex;
     flex-direction: column;
