@@ -234,3 +234,25 @@ footer {
 .email {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTEyIDEyLjcxM0wuMDE1IDNoMjMuOTcxTDEyIDEyLjcxM3ptLTUuNDI1LTEuODIyTDAgNS41NjJ2MTIuNTAxbDYuNTc1LTcuMTcyem0xMC44NSAwTDI0IDE4LjA2M1Y1LjU2MmwtNi41NzUgNS4zMjl6bS0xLjU1NyAxLjI2MUwxMiAxNS4yODdsLTMuODY4LTMuMTM1TC4wMjIgMjFoMjMuOTU2bC04LjExLTguODQ4eiIvPjwvc3ZnPg==)
 }
+
+.me {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.me > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.me > div > img {
+    border-radius: 100%;
+    height: 200px;
+    margin-right: 40px;
+    width: 300px;
+}
+.me > div > div{
+    display: flex;
+    flex-direction: column;
+}

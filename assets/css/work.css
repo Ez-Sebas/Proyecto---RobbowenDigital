@@ -41,7 +41,6 @@
     height: 3px;
     background: var(--subtext);
     width: 80px;
-    transform-origin: left center;
 }
 
 .information > p {
@@ -57,7 +56,7 @@
 .information > p > abbr {
     display: inline-block;
     line-height: 1.25;
-    border-bottom: .125em dashed var(--fill,var(--subtext));
+    border-bottom: 3px dashed var(--fill,var(--subtext));
     cursor: help;
     text-decoration: none;
 }

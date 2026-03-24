@@ -1,0 +1,126 @@
+.container-header > a > img {
+    padding: 17px  10px;
+    height: 100px;
+    width: 140px;
+}
+
+.hire-me > a > img {
+    padding: 17px  10px;
+    padding-right: 0;
+    height: 50px;
+    position: relative;
+    top: -5px;
+    width: 55px;
+}
+
+.article-ppal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.information > span {
+    color: var(--subtext);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 17.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 21.875px;
+    margin-top: 200px;
+}
+
+.information > h1 {
+    color: var(--text);
+    font-family: Bitter, serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.information > h1:before {
+    background: var(--subtext);
+    content: "";
+    height: 3px;
+    left: 0px;
+    position: absolute;
+    top: 320px;
+    width: 80px;
+}
+
+.information > p {
+    color: var(--text);
+    font-family: Bitter, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.7px;
+    margin-right: 20px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.code {
+    color: var(--subtext);
+}
+
+blockquote {
+    color: var(--text);
+    font-family: Bitter, serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 39.6px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    margin-top: 60px;
+    padding-left: 15px;
+    position: relative;
+}
+
+blockquote:before {
+    color: var(--subtext);
+    content: "“";
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 100px;
+    font-weight: 700;
+    left: -45px;
+    position: absolute;
+    top: 22px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 40px 0 40px 0;
+}
+
+ul li::marker {
+    color: var(--subtext);
+}
+
+li {
+    color: var(--text);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.7px;
+    margin-top: 19px;
+}
+
+.hype-hope {
+    border-bottom: 1px solid #919795;
+    padding-bottom: 70px;
+    margin-top: 0;
+}
+
+.hype-word {
+    text-decoration: line-through;
+}

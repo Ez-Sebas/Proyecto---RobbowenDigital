@@ -41,7 +41,6 @@
     height: 3px;
     background: var(--subtext);
     width: 80px;
-    transform-origin: left center;
 }
 
 .information > p {
@@ -176,7 +175,7 @@
     content: '';
     display: block;
     height: 3px;
-    width: 100px; /* ajustá el largo */
+    width: 100px;
     background-color: var(--line);
 }
 
