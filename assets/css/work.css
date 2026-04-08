@@ -235,3 +235,89 @@
     margin-left: 270px;
     margin-right: 270px;
 }
+
+@media (max-width: 768px) {
+    .container-header > a > img {
+        height: 70px;
+        width: 100px;
+        padding: 10px 5px;
+    }
+
+    .hire-me {
+        margin-top: 14px;
+    }
+
+    .hire-me > a > img {
+        height: 50px;
+        margin-left: 90px;
+        width: 50px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .information {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .information > h1 {
+        font-size: 44px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+
+    .information > h1:before {
+        top: 110px;
+    }
+
+    .information > p {
+        font-size: 18px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .considered-development,
+    .code-choreography,
+    .server-side,
+    .lets-build {
+        margin-top: 60px;
+    }
+
+    .considered-development > div,
+    .code-choreography > div,
+    .server-side > div {
+        flex-direction: column;
+    }
+
+    .considered-development > div > img,
+    .code-choreography > div > img,
+    .server-side > div > img {
+        position: static;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        margin-right: 0;
+        top: 0;
+    }
+
+    .considered-development > div > div {
+        margin-right: 0;
+    }
+
+    .lets-build > div > h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .lets-build > div > p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

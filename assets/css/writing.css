@@ -208,3 +208,78 @@
 #rekishi {
     border: none;
 }
+
+@media (max-width: 768px) {
+    .container-header > a > img {
+        height: 85px;
+        width: 95px;
+        padding: 10px 5px;
+    }
+
+    .hire-me {
+        margin-top: 18px;
+    }
+
+    .hire-me > a > img {
+        height: 60px;
+        margin-left: 90px;
+        width: 65px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .information {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .information > h1 {
+        font-size: 44px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+
+    .information > h1:before {
+        top: 110px;
+    }
+
+    .information > p {
+        font-size: 18px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .pages {
+        margin-top: 60px;
+    }
+
+    .pages > article {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        padding-bottom: 25px;
+    }
+
+    .pages > article > span {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .pages > article > span::after {
+        width: 60px;
+    }
+
+    .pages > article > div > h3 > a {
+        font-size: 26px;
+    }
+
+    .pages > article > div > p {
+        font-size: 16px;
+    }
+}

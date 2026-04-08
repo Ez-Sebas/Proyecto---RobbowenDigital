@@ -270,3 +270,102 @@
     font-weight: 700;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .container-header > a > img {
+        height: 85px;
+        width: 100px;
+        padding: 10px 5px;
+    }
+
+    .hire-me {
+        margin-top: 18px;
+    }
+
+    .hire-me > a > img {
+        height: 55px;
+        margin-left: 90px;
+        width: 60px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .information {
+        margin-right: 0;
+        margin-top: 13px;
+    }
+
+    .information > h1 {
+        font-size: 44px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+
+    .information > h1:before {
+        top: 113px;
+    }
+
+    .information > p {
+        font-size: 18px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .about-me {
+        margin-top: 60px;
+    }
+
+    .about-me > div,
+    .serial-language > div {
+        flex-direction: column;
+    }
+
+    .about-me > div > img,
+    .serial-language > div > img {
+        position: static;
+        width: 100%;
+        height: auto;
+        right: 0;
+        left: 0;
+        margin-right: 0;
+        top: 0;
+    }
+
+    .about-me > div > div,
+    .serial-language > div > div {
+        margin-right: 0;
+    }
+
+    .serial-language {
+        margin-top: 60px;
+    }
+
+    .photography > div {
+        margin-right: 0;
+    }
+
+    .photos-grid > div {
+        grid-template-columns: 1fr;
+    }
+
+    .photos-grid > div > div > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .milda, .lakebled, .asakusa, .gifu,
+    .lisbon, .poster, .walessunset, .ljubljana {
+        height: auto;
+    }
+
+    .btns {
+        width: 100%;
+        margin: 20px 0;
+    }
+}

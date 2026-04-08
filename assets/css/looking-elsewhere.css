@@ -124,3 +124,84 @@ li {
 .hype-word {
     text-decoration: line-through;
 }
+
+@media (max-width: 768px) {
+    .container-header > a > img {
+        height: 90px;
+        width: 100px;
+        padding: 10px 5px;
+    }
+
+    .hire-me {
+        margin-top: 12px;
+    }
+
+    .hire-me > a > img {
+        height: 50px;
+        margin-left: 90px;
+        width: 50px;
+    }
+
+    .article-ppal {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .information > span {
+        margin-top: 80px;
+        font-size: 15px;
+    }
+
+    .information > h1 {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+
+    .information > h1:before {
+        top: 160px; 
+    }
+
+    .information > p {
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    section > img {
+        position: static;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .phone3 {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .lietvards-code,
+    .lietvards {
+        width: 100%;
+        height: auto;
+    }
+
+    .dziesmusvetki {
+        width: 100%;
+        height: auto;
+    }
+
+    blockquote {
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 10px;
+        margin-right: 0;
+    }
+
+    blockquote:before {
+        font-size: 70px;
+        left: -25px;
+        top: 10px;
+    }
+}

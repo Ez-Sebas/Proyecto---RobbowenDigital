@@ -9,8 +9,8 @@
     padding-right: 0;
     height: 50px;
     position: relative;
-    top: -7px;
-    width: 60px;
+    top: -5px;
+    width: 55px;
 }
 
 .article-ppal {
@@ -52,8 +52,16 @@
     height: 3px;
     left: 0px;
     position: absolute;
-    top: 400px;
+    top: 320px;
     width: 80px;
+}
+
+.information > img {
+    height: 258px;
+    margin-bottom: 50px;
+    position: relative;
+    right: 100px;
+    width: 959px;
 }
 
 .information > p {
@@ -69,31 +77,50 @@ section {
     margin-top: 40px;
 }
 
-abbr {
-    display: inline-block;
-    line-height: 1.25;
-    border-bottom: 3px dashed var(--fill,var(--subtext));
-    cursor: help;
-    text-decoration: none;
+pre {
+    border-left: 3px solid var(--line);
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 15.2px;
+    font-weight: 700;
+    overflow-x: auto;
+    padding: 0;
+    white-space: normal;
 }
 
-.lietvards-code {
-    height: 420px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    width: 740px;
+code {
+    display: block;
 }
 
-.lietvards {
-    height: 523px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    width: 740px;
+.line {
+    background-color: #ffffff;
+    display: block;
+    padding: 4px 16px;
+    white-space: pre;
+}
+
+.hl {
+    background-color: #f4f8ff;
+}
+
+.red {
+    color: #C92C2C;
+}
+
+.blue { 
+    color: #1990B8; 
+}
+
+.green { 
+    color: #2F9C0A; 
+}
+
+.grey { 
+    color: #7D8B99; 
 }
 
 .wrapping-up {
     border-bottom: 1px solid #919795;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     margin-top: 0;
 }
 
@@ -105,12 +132,13 @@ abbr {
     }
 
     .hire-me {
-        margin-top: 12px;
+        margin-top: 19px;
     }
 
     .hire-me > a > img {
-        height: 50px;
+        height: 60px;
         margin-left: 90px;
+        top: -10px;
         width: 60px;
     }
 
@@ -127,11 +155,19 @@ abbr {
     .information > h1 {
         font-size: 36px;
         line-height: 44px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .information > h1:before {
-        top: 200px;
+        top: 160px;
+    }
+
+    .information > img {
+        position: static;
+        width: 100%;
+        height: auto;
+        right: 0;
+        margin-bottom: 30px;
     }
 
     .information > p {
@@ -139,41 +175,11 @@ abbr {
         margin-right: 0;
     }
 
-    section > img {
-        position: static;
-        width: 100%;
-        height: auto;
-        left: 0;
-        right: 0;
+    pre {
+        font-size: 12px;
     }
 
-    .phone3 {
-        position: static;
-        width: 100%;
-        height: auto;
-    }
-
-    .lietvards-code,
-    .lietvards {
-        width: 100%;
-        height: auto;
-    }
-
-    .dziesmusvetki {
-        width: 100%;
-        height: auto;
-    }
-
-    blockquote {
-        font-size: 18px;
-        line-height: 28px;
-        padding-left: 10px;
-        margin-right: 0;
-    }
-
-    blockquote:before {
-        font-size: 70px;
-        left: -25px;
-        top: 10px;
+    .line {
+        padding: 4px 10px;
     }
 }
